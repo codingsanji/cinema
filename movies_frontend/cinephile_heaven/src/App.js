@@ -9,15 +9,15 @@ import GenrePage from './pages/GenrePage';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login&signup" element={<LogUp />} />
-        <Route path="/search/:query" element={<SearchResultsPage />} />
-        <Route path="/movie/:id" element={<MovieDetailsPage />} />
-        <Route path="/genre/:genreId" element={<GenrePage />} />
-      </Routes>
-    </Router>
+    <>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login&signup" element={<LogUp />} />
+          <Route path="/search/:query" element={<SearchResultsPage />} />
+          <Route path="/movie/:id" element={<MovieDetailsPage />} />
+          <Route path="/genre/:genreId" element={<GenrePage />} />
+        </Routes>
+    </>
   );
 };
 

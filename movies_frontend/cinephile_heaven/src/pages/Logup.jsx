@@ -3,7 +3,7 @@ import Signup from "../components/SignUp";
 import Signin from "../components/Signin";
 
 const Logup = () => {
-  const [isSignup, setIsSignup] = useState(true); 
+  const [isSignup, setIsSignup] = useState(false); 
   const handleToggle = () => {
     setIsSignup(!isSignup); 
   };
