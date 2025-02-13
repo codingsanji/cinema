@@ -1,6 +1,5 @@
 package example.codingsanji.movies_backend;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

@@ -8,8 +8,6 @@ import org.springframework.data.mongodb.core.query.Update;
 
 import java.util.List;
 
-import static org.springframework.data.mongodb.core.aggregation.SelectionOperators.First.first;
-
 @org.springframework.stereotype.Service
 public class ReviewService {
     @Autowired
