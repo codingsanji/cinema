@@ -3,22 +3,26 @@ package example.codingsanji.movies_backend;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.bson.types.*;
-
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "reviews")
-@Data /*takes care of all getters and setters*/
-@AllArgsConstructor /*takes all below private fields as arguments*/
-@NoArgsConstructor /*takes no parameters*/
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Review {
-    @Id       /*to note that below properties are unique identifiers for the movies */
-    private ObjectId id;
+    @Id
+    private String id;
+
     private String body;
     private String movieId;
+    private String userId;
+    private int rating;
 
-    public Review(String body) {
+    public Review(String body, String movieId, String userId, int rating) {
         this.body = body;
+        this.movieId = movieId;
+        this.userId = userId;
+        this.rating = rating;
     }
 }
